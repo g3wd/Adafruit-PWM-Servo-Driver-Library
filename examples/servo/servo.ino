@@ -73,7 +73,7 @@ void setServoPulse(uint8_t n, double pulse) {
   double pulselength;
   
   pulselength = 1000000;   // 1,000,000 us per second
-  pulselength /= SERVO_FREQ;   // Analog servos run at ~60 Hz updates
+  pulselength /= SERVO_FREQ;   // Analog servos run at ~50 Hz updates
   Serial.print(pulselength); Serial.println(" us per period"); 
   pulselength /= 4096;  // 12 bits of resolution
   Serial.print(pulselength); Serial.println(" us per bit"); 
